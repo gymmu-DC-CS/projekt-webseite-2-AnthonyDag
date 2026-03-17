@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Simple Start Page</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+        
+        body {
             font-family: Arial, sans-serif;
             background: #f0f0f0;
+            overflow: hidden;
         }
+        
         .navbar {
             width: 100%;
             background: #333;
@@ -26,11 +30,20 @@
             left: 0;
             z-index: 10;
         }
-        .navbar span {
+        
+        .navbar a {
             margin: 0 30px;
             font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
             cursor: pointer;
+            transition: color 0.2s;
         }
+        
+        .navbar a:hover {
+            color: #ffd700;
+        }
+        
         .main-image {
             position: absolute;
             top: 80px;
@@ -39,36 +52,24 @@
             height: calc(100vh - 80px);
             overflow: hidden;
         }
+        
         .main-image img {
             width: 100vw;
             height: 100%;
             object-fit: cover;
             display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
         }
     </style>
 </head>
-</head>
-    <body style="overflow: hidden;">
-        <div class="navbar">
-            <span>Home</span>
-            <span>About</span>
-            <span>Gallery</span>
-            <span>Contact</span>
-            <span>More</span>
-        </div>
-        <div class="main-image">
-            <img src="c:\Users\adag\Downloads\ChatGPT Image 16. März 2026, 16_55_05.png" alt="AI-generated abstract digital artwork featuring vibrant colors and ethereal shapes in a futuristic setting, conveying a sense of innovation and technology">
-        </div>
-</body>
-</html>
-=======
-    <title>Document</title>
-</head>
 <body>
-    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">Olympic Distance</a>
+        <a href="gallery.html">Middle Distance</a>
+        <a href="contact.html">Long Distance</a>
+    </div>
+    <div class="main-image">
+        <img src="c:\Users\adag\Downloads\ChatGPT Image 16. März 2026, 16_55_05.png" alt="AI-generated abstract digital artwork featuring vibrant colors and ethereal shapes in a futuristic setting, conveying a sense of innovation and technology">
+    </div>
 </body>
 </html>
->>>>>>> d96c74e1038306d783e7e29a5a3f86a2bd5d0a2f
