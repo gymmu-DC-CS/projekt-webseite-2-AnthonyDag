@@ -46,8 +46,11 @@
         
         .nav-item {
             position: relative;
-            display: inline-block;
+            display: flex;
+            align-items: center;
             margin: 0 30px;
+            padding-bottom: 0;
+            height: 100%;
         }
         
         .nav-item > a {
@@ -60,16 +63,18 @@
         }
         
         .dropdown {
-            display: none;
             position: absolute;
-            top: 100%;
+            top: calc(100% - 10px);
             left: -30px;
             background: #222;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
             border-radius: 4px;
             z-index: 20;
-            margin-top: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            pointer-events: none;
         }
         
         .dropdown a {
@@ -96,11 +101,15 @@
         }
         
         .nav-item:hover .dropdown {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
         
         .dropdown:hover {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
         
         .main-image {
