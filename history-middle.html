@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>History - Middle Distance</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +14,6 @@
         body {
             font-family: Arial, sans-serif;
             background: #f0f0f0;
-            overflow: hidden;
         }
         
         .navbar {
@@ -29,19 +28,6 @@
             top: 0;
             left: 0;
             z-index: 10;
-        }
-        
-        .navbar a {
-            margin: 0 30px;
-            font-size: 1.2em;
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-        
-        .navbar a:hover {
-            color: #ffd700;
         }
         
         .nav-item {
@@ -112,16 +98,14 @@
             pointer-events: auto;
         }
         
-        .content {
-            position: absolute;
-            top: 80px;
-            left: 0;
-            width: 100vw;
-            height: calc(100vh - 80px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3em;
+        .container {
+            margin-top: 120px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
             color: #333;
         }
     </style>
@@ -172,8 +156,8 @@
             </div>
         </div>
     </div>
-    <div class="content">
-        Hello
+    <div class="container">
+        <h1>Middle Distance History</h1>
     </div>
 </body>
 </html>

@@ -32,8 +32,11 @@
         
         .nav-item {
             position: relative;
-            display: inline-block;
+            display: flex;
+            align-items: center;
             margin: 0 30px;
+            padding-bottom: 0;
+            height: 100%;
         }
         
         .nav-item > a {
@@ -45,21 +48,19 @@
             transition: color 0.2s;
         }
         
-        .nav-item > a:hover {
-            color: #ffd700;
-        }
-        
         .dropdown {
-            display: none;
             position: absolute;
-            top: 100%;
+            top: calc(100% - 10px);
             left: -30px;
             background: #222;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
             border-radius: 4px;
             z-index: 20;
-            margin-top: 8px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            pointer-events: none;
         }
         
         .dropdown a {
@@ -86,11 +87,15 @@
         }
         
         .nav-item:hover .dropdown {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
         
         .dropdown:hover {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
         }
         
         .container {
@@ -118,12 +123,13 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
+            cursor: pointer;
         }
         
         .athlete-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
         }
         
         .athlete-card img {
@@ -131,6 +137,11 @@
             height: 350px;
             object-fit: cover;
             display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .athlete-card:hover img {
+            transform: scale(1.05);
         }
         
         .athlete-name {
@@ -150,20 +161,43 @@
         <div class="nav-item">
             <a href="about.html">Olympic Distance</a>
             <div class="dropdown">
-                <a href="history.html">History</a>
-                <a href="organisation.html">Organisation</a>
-                <a href="athletes.html">Athletes</a>
-                <a href="links.html">Links</a>
+                <a href="about.html">Distance</a>
+                <a href="history-olympic.html">History</a>
+                <a href="organisation-olympic.html">Organisation</a>
+                <a href="athletes-olympic.html">Athletes</a>
+                <a href="links-olympic.html">Links</a>
             </div>
         </div>
         <div class="nav-item">
             <a href="100km.html">100 km</a>
             <div class="dropdown">
-                <a href="history.html">History</a>
-                <a href="organisation.html">Organisation</a>
-                <a href="athletes.html">Athletes</a>
-                <a href="links.html">Links</a>
+                <a href="100km.html">Distance</a>
+                <a href="history-100km.html">History</a>
+                <a href="organisation-100km.html">Organisation</a>
+                <a href="athletes-100km.html">Athletes</a>
+                <a href="links-100km.html">Links</a>
             </div>
+        </div>
+        <div class="nav-item">
+            <a href="gallery.html">Middle Distance</a>
+            <div class="dropdown">
+                <a href="gallery.html">Distance</a>
+                <a href="history-middle.html">History</a>
+                <a href="organisation-middle.html">Organisation</a>
+                <a href="athletes-middle.html">Athletes</a>
+                <a href="links-middle.html">Links</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            <a href="contact.html">Long Distance</a>
+            <div class="dropdown">
+                <a href="contact.html">Distance</a>
+                <a href="history-long.html">History</a>
+                <a href="organisation-long.html">Organisation</a>
+                <a href="athletes-long.html">Athletes</a>
+                <a href="links-long.html">Links</a>
+            </div>
+        </div>
         </div>
         <div class="nav-item">
             <a href="gallery.html">Middle Distance</a>
