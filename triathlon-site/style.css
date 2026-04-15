@@ -193,14 +193,90 @@
 
 /* Race Schedule Section - IRONMAN Theme */
 .race-schedule {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 4rem 2rem;
     text-align: center;
 }
 
+/* About Section - IRONMAN Theme */
+.about-section {
+    background-color: #000000;
+    padding: 4rem 2rem;
+    color: #ffffff;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin: 0;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-image-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #cc0000;
+    box-shadow: 0 8px 24px rgba(204, 0, 0, 0.3);
+}
+
+.about-image-caption {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #cc0000;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .race-schedule h2 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 4rem;
     text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3);
     letter-spacing: 2px;
