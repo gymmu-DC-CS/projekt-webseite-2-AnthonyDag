@@ -66,6 +66,13 @@
     letter-spacing: 2px;
 }
 
+.athletes-subtitle {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
 /* 3-column grid layout */
 .grid-container {
     display: grid;
