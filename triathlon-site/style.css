@@ -11,10 +11,9 @@
 }
 
 .ironman-logo {
-    max-width: 500%;
-    width: auto;
+    max-width: none;
+    width: 25%;
     height: auto;
-    max-height: 5000px;
 }
 
 /* Athletes Grid Section - 2 columns - IRONMAN Theme */
