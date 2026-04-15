@@ -12,8 +12,43 @@
 
 .ironman-logo {
     max-width: none;
-    width: 25%;
+    width: 50%;
     height: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #000000;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #cc0000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #cc0000;
+    border-bottom: 2px solid #cc0000;
 }
 
 /* Athletes Grid Section - 2 columns - IRONMAN Theme */
@@ -31,12 +66,12 @@
     letter-spacing: 2px;
 }
 
-/* 2-column grid layout */
+/* 3-column grid layout */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -55,6 +90,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid #cc0000;
     border-radius: 12px;
+    background-color: #ffffff;
 }
 
 .athlete-card:hover {
