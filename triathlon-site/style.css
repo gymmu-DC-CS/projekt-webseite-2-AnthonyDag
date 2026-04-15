@@ -193,7 +193,7 @@
 
 /* Race Schedule Section - IRONMAN Theme */
 .race-schedule {
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -216,11 +216,11 @@
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3.5fr 1fr;
     gap: 3rem;
     max-width: 1400px;
     margin: 0 auto;
-    align-items: start;
+    align-items: stretch;
 }
 
 .about-text {
@@ -230,7 +230,7 @@
 }
 
 .about-section p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 1.8;
     color: #ffffff;
     margin: 0;
@@ -239,7 +239,7 @@
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .about-image-item {
@@ -276,7 +276,7 @@
 
 .race-schedule h2 {
     font-size: 2.5rem;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 4rem;
     text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.3);
     letter-spacing: 2px;
